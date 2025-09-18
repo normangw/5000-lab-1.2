@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "about.html#quarto",
+    "href": "about.html#quarto",
+    "title": "about",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "S1mple Quarto Website",
+    "section": "",
+    "text": "Welcome to my professional site. This serves as a demonstration of Quarto features and formatting.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\nThis is column 1 with some placeholder text.\n\nThis is column 2 with more placeholder text.\n\n\n\n\n\nBullet point one\nBullet point two\nBullet point three"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "S1mple Quarto Website",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\nThis is column 1 with some placeholder text.\n\nThis is column 2 with more placeholder text.\n\n\n\n\n\nBullet point one\nBullet point two\nBullet point three"
+  },
+  {
+    "objectID": "slides/slides/slides.html",
+    "href": "slides/slides/slides.html",
+    "title": "slides",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "slides/slides/slides.html#quarto",
+    "href": "slides/slides/slides.html#quarto",
+    "title": "slides",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  }
+]

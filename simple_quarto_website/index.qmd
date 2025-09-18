@@ -1,0 +1,87 @@
+---
+title: "S1mple Quarto Website"
+format: html
+toc: true
+bibliography: reference.bib
+---
+
+# Introduction
+
+Welcome to my professional site. This serves as a demonstration of Quarto features and formatting.
+
+## Background
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+::: columns
+::: column
+This is **column 1** with some placeholder text.
+:::
+
+::: column
+This is **column 2** with more placeholder text.
+:::
+:::
+
+### Key Points
+
+- Bullet point one
+- Bullet point two
+- Bullet point three
+
+---
+
+# Data Overview
+
+Here is a simple markdown table:
+
+| Item   | Value | Notes       |
+|--------|-------|-------------|
+| Cats   | 12    | From survey |
+| Dogs   | 8     | Estimated   |
+| Birds  | 5     | Observed    |
+
+$E = mc^2$ shows the relationship between energy and mass.
+
+Block math example:
+
+$$
+\int_0^1 x^2 \, dx = \frac{1}{3}
+$$
+
+---
+
+# References and Media
+
+Here’s a footnote reference.[^1]
+
+> "This is a professional quote, demonstrating Quarto markdown."
+
+### Images
+
+![Sample Image 1](images/headshot.jpg){width=300px}
+![Sample Image 2](images/old_headshot.jpg){width=300px}
+
+# Literature Review
+
+Prior research has highlighted the role of state capacity in shaping long-run development.  
+For example, [@acemoglu2013monopoly] show how the monopoly of violence shaped outcomes in Colombia.  
+Meanwhile, [@dell2018historical] examine how historical states in Vietnam influenced collective action and modern economic development.
+
+### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iEpJwprxDdk" title="Embedded Video" frameborder="0" allowfullscreen></iframe>
+
+### Diagram
+
+```{mermaid}
+flowchart TD
+    A[Start] --> B[Do Work]
+    B --> C{Success?}
+    C -->|Yes| D[Celebrate]
+    C -->|No| E[Try Again]
+```
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
