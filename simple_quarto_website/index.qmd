@@ -60,7 +60,7 @@ Here’s a footnote reference.[^1]
 ### Images
 
 ![Sample Image 1](images/headshot.jpg){width=300px}
-![Sample Image 2](images/old_headshot.jpg){width=300px}
+![Sample Image 2](images/healy-hall.jpeg){width=300px}
 
 # Literature Review
 

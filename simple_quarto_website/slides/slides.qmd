@@ -1,0 +1,57 @@
+---
+title: My Presentation
+author: Your Name
+format: revealjs
+bibliography: ../reference.bib
+jupyter: python3
+---
+
+# Introduction
+
+Welcome to my presentation. This is the first slide.
+
+## Background
+
+This is the second slide.  
+Here’s a citation [@acemoglu2013monopoly].
+
+## Data & Visuals
+
+- Bullet point one
+- Bullet point two
+- Bullet point three
+
+## Visuals
+
+Here are two images:
+
+![image1](images/norman.JPG){width=300px}  
+![image2](images/norman2.JPG){width=300px}
+
+## Data Analysis with Python
+
+Let's analyze some data and create a plot:
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+np.random.seed(42)
+x = np.linspace(0, 10, 100)
+y = np.sin(x) + np.random.normal(0, 0.1, 100)
+
+# Create plot
+plt.figure(figsize=(8, 4))
+plt.scatter(x, y, alpha=0.6, label='Data points')
+plt.plot(x, np.sin(x), 'r-', linewidth=2, label='True function')
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.title('Sample Data with Noise')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+```

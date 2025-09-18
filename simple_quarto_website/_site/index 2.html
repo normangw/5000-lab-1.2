@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – simple_quarto_website</title>
+<title>S1mple Quarto Website – simple_quarto_website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,42 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -102,7 +87,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -124,16 +141,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.ipynb"> 
 <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./slides/slides.html"> 
-<span class="menu-text">Slides</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -151,12 +164,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link active" data-scroll-target="#about-this-project">About This Project</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a>
   <ul class="collapse">
-  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key Points</a></li>
   </ul></li>
+  </ul></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#references-and-media" id="toc-references-and-media" class="nav-link" data-scroll-target="#references-and-media">References and Media</a>
+  <ul class="collapse">
+  <li><a href="#images" id="toc-images" class="nav-link" data-scroll-target="#images">Images</a></li>
+  </ul></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature Review</a>
+  <ul class="collapse">
+  <li><a href="#video" id="toc-video" class="nav-link" data-scroll-target="#video">Video</a></li>
+  <li><a href="#diagram" id="toc-diagram" class="nav-link" data-scroll-target="#diagram">Diagram</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -166,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">S1mple Quarto Website</h1>
 </div>
 
 
@@ -183,47 +206,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<section id="about-this-project" class="level1">
-<h1>About This Project</h1>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Welcome to my professional site. This serves as a demonstration of Quarto features and formatting.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>This project demonstrates the ability to combine reproducible research, automation, and visualization in a professional workflow.</p>
-<section id="future-work" class="level3">
-<h3 class="anchored" data-anchor-id="future-work">Future Work</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat mi. Etiam congue et augue sed tempus.</p>
-<div id="3f8fe0a7" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate sample data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">2</span><span class="op">*</span>np.pi, <span class="dv">100</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.sin(x)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">4</span>))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y, label<span class="op">=</span><span class="st">"sin(x)"</span>, color<span class="op">=</span><span class="st">"blue"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Sample Plot"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"x"</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"sin(x)"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
+<div class="columns">
+<div class="column">
+<p>This is <strong>column 1</strong> with some placeholder text.</p>
+</div><div class="column">
+<p>This is <strong>column 2</strong> with more placeholder text.</p>
+</div>
+</div>
+<section id="key-points" class="level3">
+<h3 class="anchored" data-anchor-id="key-points">Key Points</h3>
+<ul>
+<li>Bullet point one</li>
+<li>Bullet point two</li>
+<li>Bullet point three</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="data-overview" class="level1">
+<h1>Data Overview</h1>
+<p>Here is a simple markdown table:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cats</td>
+<td>12</td>
+<td>From survey</td>
+</tr>
+<tr class="even">
+<td>Dogs</td>
+<td>8</td>
+<td>Estimated</td>
+</tr>
+<tr class="odd">
+<td>Birds</td>
+<td>5</td>
+<td>Observed</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(E = mc^2\)</span> shows the relationship between energy and mass.</p>
+<p>Block math example:</p>
+<p><span class="math display">\[
+\int_0^1 x^2 \, dx = \frac{1}{3}
+\]</span></p>
+<hr>
+</section>
+<section id="references-and-media" class="level1">
+<h1>References and Media</h1>
+<p>Here’s a footnote reference.[^1]</p>
+<blockquote class="blockquote">
+<p>“This is a professional quote, demonstrating Quarto markdown.”</p>
+</blockquote>
+<section id="images" class="level3">
+<h3 class="anchored" data-anchor-id="images">Images</h3>
+<p><img src="images/headshot.jpg" class="img-fluid" width="300" alt="Sample Image 1"> <img src="images/old_headshot.jpg" class="img-fluid" width="300" alt="Sample Image 2"></p>
+</section>
+</section>
+<section id="literature-review" class="level1">
+<h1>Literature Review</h1>
+<p>Prior research has highlighted the role of state capacity in shaping long-run development.<br>
+For example, <span class="citation" data-cites="acemoglu2013monopoly">(<a href="#ref-acemoglu2013monopoly" role="doc-biblioref">Acemoglu, Robinson, and Santos 2013</a>)</span> show how the monopoly of violence shaped outcomes in Colombia.<br>
+Meanwhile, <span class="citation" data-cites="dell2018historical">(<a href="#ref-dell2018historical" role="doc-biblioref">Dell, Lane, and Querubin 2018</a>)</span> examine how historical states in Vietnam influenced collective action and modern economic development.</p>
+<section id="video" class="level3">
+<h3 class="anchored" data-anchor-id="video">Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iEpJwprxDdk" title="Embedded Video" frameborder="0" allowfullscreen="">
+</iframe>
+</section>
+<section id="diagram" class="level3">
+<h3 class="anchored" data-anchor-id="diagram">Diagram</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="about_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Start] --&gt; B[Do Work]
+    B --&gt; C{Success?}
+    C --&gt;|Yes| D[Celebrate]
+    C --&gt;|No| E[Try Again]
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<p>This is a Quarto website.</p>
+<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+
 
 
 </section>
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-acemoglu2013monopoly" class="csl-entry" role="listitem">
+Acemoglu, Daron, James A Robinson, and Rafael J Santos. 2013. <span>“The Monopoly of Violence: Evidence from Colombia.”</span> <em>Journal of the European Economic Association</em> 11 (suppl_1): 5–44.
+</div>
+<div id="ref-dell2018historical" class="csl-entry" role="listitem">
+Dell, Melissa, Nathan Lane, and Pablo Querubin. 2018. <span>“The Historical State, Local Collective Action, and Economic Development in Vietnam.”</span> <em>Econometrica</em> 86 (6): 2083–2121.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

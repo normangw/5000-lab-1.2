@@ -53,6 +53,6 @@
     "href": "slides/slides.html#data-analysis-with-python",
     "title": "My Presentation",
     "section": "Data Analysis with Python",
-    "text": "Data Analysis with Python\nLet’s analyze some data and create a plot:\n#| code-fold: true\n#| code-summary: \"Show the code\"\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate sample data\nnp.random.seed(42)\nx = np.linspace(0, 10, 100)\ny = np.sin(x) + np.random.normal(0, 0.1, 100)\n\n# Create plot\nplt.figure(figsize=(8, 4))\nplt.scatter(x, y, alpha=0.6, label='Data points')\nplt.plot(x, np.sin(x), 'r-', linewidth=2, label='True function')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Sample Data with Noise')\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.show()\n\n\n\n\nAcemoglu, Daron, James A Robinson, and Rafael J Santos. 2013. “The Monopoly of Violence: Evidence from Colombia.” Journal of the European Economic Association 11 (suppl_1): 5–44."
+    "text": "Data Analysis with Python\nLet’s analyze some data and create a plot:\n\n\n\n\n\nAcemoglu, Daron, James A Robinson, and Rafael J Santos. 2013. “The Monopoly of Violence: Evidence from Colombia.” Journal of the European Economic Association 11 (suppl_1): 5–44."
   }
 ]
