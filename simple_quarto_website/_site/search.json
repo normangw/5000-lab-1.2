@@ -11,7 +11,7 @@
     "href": "about.html#motivation",
     "title": "About",
     "section": "Motivation",
-    "text": "Motivation\nThis project demonstrates the ability to combine reproducible research, automation, and visualization in a professional workflow.\n\nFuture Work\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat mi. Etiam congue et augue sed tempus.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate sample data\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# Plot\nplt.figure(figsize=(6,4))\nplt.plot(x, y, label=\"sin(x)\", color=\"blue\")\nplt.title(\"Sample Plot\")\nplt.xlabel(\"x\")\nplt.ylabel(\"sin(x)\")\nplt.legend()\nplt.show()"
+    "text": "Motivation\nThis project demonstrates the ability to combine reproducible research, automation, and visualization in a professional workflow.\n\nFuture Work\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat mi. Etiam congue et augue sed tempus.\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate sample data\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# Plot\nplt.figure(figsize=(6,4))\nplt.plot(x, y, label=\"sin(x)\", color=\"blue\")\nplt.title(\"Sample Plot\")\nplt.xlabel(\"x\")\nplt.ylabel(\"sin(x)\")\nplt.legend()\nplt.show()"
   },
   {
     "objectID": "index.html",
