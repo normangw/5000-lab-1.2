@@ -2,16 +2,16 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "about",
+    "title": "About",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "About this site"
   },
   {
-    "objectID": "about.html#quarto",
-    "href": "about.html#quarto",
-    "title": "about",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "objectID": "about.html#motivation",
+    "href": "about.html#motivation",
+    "title": "About",
+    "section": "Motivation",
+    "text": "Motivation\nThis project demonstrates the ability to combine reproducible research, automation, and visualization in a professional workflow.\n\nFuture Work\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat mi. Etiam congue et augue sed tempus.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate sample data\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# Plot\nplt.figure(figsize=(6,4))\nplt.plot(x, y, label=\"sin(x)\", color=\"blue\")\nplt.title(\"Sample Plot\")\nplt.xlabel(\"x\")\nplt.ylabel(\"sin(x)\")\nplt.legend()\nplt.show()"
   },
   {
     "objectID": "index.html",
@@ -28,17 +28,31 @@
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\nThis is column 1 with some placeholder text.\n\nThis is column 2 with more placeholder text.\n\n\n\n\n\nBullet point one\nBullet point two\nBullet point three"
   },
   {
-    "objectID": "slides/slides/slides.html",
-    "href": "slides/slides/slides.html",
-    "title": "slides",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "objectID": "slides/slides.html#background",
+    "href": "slides/slides.html#background",
+    "title": "My Presentation",
+    "section": "Background",
+    "text": "Background\nThis is the second slide.\nHere’s a citation (Acemoglu, Robinson, and Santos 2013)."
   },
   {
-    "objectID": "slides/slides/slides.html#quarto",
-    "href": "slides/slides/slides.html#quarto",
-    "title": "slides",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "objectID": "slides/slides.html#data-visuals",
+    "href": "slides/slides.html#data-visuals",
+    "title": "My Presentation",
+    "section": "Data & Visuals",
+    "text": "Data & Visuals\n\nBullet point one\nBullet point two\nBullet point three"
+  },
+  {
+    "objectID": "slides/slides.html#visuals",
+    "href": "slides/slides.html#visuals",
+    "title": "My Presentation",
+    "section": "Visuals",
+    "text": "Visuals\nHere are two images:"
+  },
+  {
+    "objectID": "slides/slides.html#data-analysis-with-python",
+    "href": "slides/slides.html#data-analysis-with-python",
+    "title": "My Presentation",
+    "section": "Data Analysis with Python",
+    "text": "Data Analysis with Python\nLet’s analyze some data and create a plot:\n#| code-fold: true\n#| code-summary: \"Show the code\"\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate sample data\nnp.random.seed(42)\nx = np.linspace(0, 10, 100)\ny = np.sin(x) + np.random.normal(0, 0.1, 100)\n\n# Create plot\nplt.figure(figsize=(8, 4))\nplt.scatter(x, y, alpha=0.6, label='Data points')\nplt.plot(x, np.sin(x), 'r-', linewidth=2, label='True function')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Sample Data with Noise')\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.show()\n\n\n\n\nAcemoglu, Daron, James A Robinson, and Rafael J Santos. 2013. “The Monopoly of Violence: Evidence from Colombia.” Journal of the European Economic Association 11 (suppl_1): 5–44."
   }
 ]

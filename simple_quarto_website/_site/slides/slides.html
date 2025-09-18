@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="slides_files/libs/clipboard/clipboard.min.js"></script>
-<script src="slides_files/libs/quarto-html/tabby.min.js"></script>
-<script src="slides_files/libs/quarto-html/popper.min.js"></script>
-<script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="Your Name">
-  <title>Professional Slide Deck</title>
+  <title>simple_quarto_website – My Presentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -115,11 +115,11 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -213,7 +213,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Professional Slide Deck</h1>
+  <h1 class="title">My Presentation</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -227,52 +227,56 @@ Your Name
 <section>
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
-<p>Welcome to my slide deck!</p>
-<p>This deck is built with <strong>Quarto</strong> and <strong>Reveal.js</strong>.</p>
+<p>Welcome to my presentation. This is the first slide.</p>
 </section>
-<section id="research-background" class="slide level2">
-<h2>Research Background</h2>
-<p>Some important research findings include:</p>
+<section id="background" class="slide level2">
+<h2>Background</h2>
+<p>This is the second slide.<br>
+Here’s a citation <span class="citation" data-cites="acemoglu2013monopoly">(<a href="#/data-analysis-with-python" role="doc-biblioref" onclick="">Acemoglu, Robinson, and Santos 2013</a>)</span>.</p>
+</section>
+<section id="data-visuals" class="slide level2">
+<h2>Data &amp; Visuals</h2>
 <ul>
-<li>The monopoly of violence in Colombia <span class="citation" data-cites="acemoglu2013monopoly">(<a href="#/quarto" role="doc-biblioref" onclick="">Acemoglu, Robinson, and Santos 2013</a>)</span><br>
-</li>
-<li>Historical states and development in Vietnam <span class="citation" data-cites="dell2018historical">(<a href="#/quarto" role="doc-biblioref" onclick="">Dell, Lane, and Querubin 2018</a>)</span></li>
+<li>Bullet point one</li>
+<li>Bullet point two</li>
+<li>Bullet point three</li>
 </ul>
+</section>
+<section id="visuals" class="slide level2">
+<h2>Visuals</h2>
 <p>Here are two images:</p>
-<p><img data-src="../images/headshot.jpg" width="300" alt="Image 1"> <img data-src="../images/old_headshot.jpg" width="300" alt="Image 2"></p>
+<p><img data-src="images/norman.JPG" width="300" alt="image1"><br>
+<img data-src="images/norman2.JPG" width="300" alt="image2"></p>
 </section>
-<section id="plot-slide" class="slide level2">
-<h2>Plot Slide</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {python} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href=""></a>#| code-fold: true</span>
-<span id="cb1-2"><a href=""></a>#| echo: false</span>
-<span id="cb1-3"><a href=""></a>#| fig-width: 6</span>
-<span id="cb1-4"><a href=""></a>#| fig-height: 4</span>
-<span id="cb1-5"><a href=""></a></span>
-<span id="cb1-6"><a href=""></a>import matplotlib.pyplot as plt</span>
-<span id="cb1-7"><a href=""></a>import numpy as np</span>
-<span id="cb1-8"><a href=""></a></span>
-<span id="cb1-9"><a href=""></a>x = np.linspace(0, 2*np.pi, 100)</span>
-<span id="cb1-10"><a href=""></a>y = np.sin(x)</span>
-<span id="cb1-11"><a href=""></a></span>
-<span id="cb1-12"><a href=""></a># Plot</span>
-<span id="cb1-13"><a href=""></a>plt.figure(figsize=(6,4))</span>
-<span id="cb1-14"><a href=""></a>plt.plot(x, y, label="sin(x)", color="blue")</span>
-<span id="cb1-15"><a href=""></a>plt.title("Sample Plot")</span>
-<span id="cb1-16"><a href=""></a>plt.xlabel("x")</span>
-<span id="cb1-17"><a href=""></a>plt.ylabel("sin(x)")</span>
-<span id="cb1-18"><a href=""></a>plt.legend()</span>
-<span id="cb1-19"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="quarto" class="slide level2 smaller scrollable">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<section id="data-analysis-with-python" class="slide level2 smaller scrollable">
+<h2>Data Analysis with Python</h2>
+<p>Let’s analyze some data and create a plot:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {python} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>#| code-fold: true</span>
+<span id="cb1-2"><a></a>#| code-summary: "Show the code"</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a>import matplotlib.pyplot as plt</span>
+<span id="cb1-5"><a></a>import numpy as np</span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a># Generate sample data</span>
+<span id="cb1-8"><a></a>np.random.seed(42)</span>
+<span id="cb1-9"><a></a>x = np.linspace(0, 10, 100)</span>
+<span id="cb1-10"><a></a>y = np.sin(x) + np.random.normal(0, 0.1, 100)</span>
+<span id="cb1-11"><a></a></span>
+<span id="cb1-12"><a></a># Create plot</span>
+<span id="cb1-13"><a></a>plt.figure(figsize=(8, 4))</span>
+<span id="cb1-14"><a></a>plt.scatter(x, y, alpha=0.6, label='Data points')</span>
+<span id="cb1-15"><a></a>plt.plot(x, np.sin(x), 'r-', linewidth=2, label='True function')</span>
+<span id="cb1-16"><a></a>plt.xlabel('X')</span>
+<span id="cb1-17"><a></a>plt.ylabel('Y')</span>
+<span id="cb1-18"><a></a>plt.title('Sample Data with Noise')</span>
+<span id="cb1-19"><a></a>plt.legend()</span>
+<span id="cb1-20"><a></a>plt.grid(True, alpha=0.3)</span>
+<span id="cb1-21"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-acemoglu2013monopoly" class="csl-entry" role="listitem">
 Acemoglu, Daron, James A Robinson, and Rafael J Santos. 2013. <span>“The Monopoly of Violence: Evidence from Colombia.”</span> <em>Journal of the European Economic Association</em> 11 (suppl_1): 5–44.
-</div>
-<div id="ref-dell2018historical" class="csl-entry" role="listitem">
-Dell, Melissa, Nathan Lane, and Pablo Querubin. 2018. <span>“The Historical State, Local Collective Action, and Economic Development in Vietnam.”</span> <em>Econometrica</em> 86 (6): 2083–2121.
 </div>
 </div>
 </section></section>
@@ -284,19 +288,19 @@ Dell, Melissa, Nathan Lane, and Pablo Querubin. 2018. <span>“The Historical St
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="slides_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="slides_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
